@@ -20,7 +20,7 @@ function EditTicket({open, onClose, toEditVehicle, toEditParts, toEditContact, t
         vehicle: vehicle,
         parts: parts,
         contact: contact,
-        invoice: invoice
+        invoice: invoice ? invoice : null
       })
       onClose()
     } catch (err) {

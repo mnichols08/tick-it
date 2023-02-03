@@ -6,7 +6,6 @@ import { doc, updateDoc, deleteDoc} from "firebase/firestore";
 import {db} from '../firebase'
 
 function Customer({name, phone, address, id, tickets}) {
-
   const [open, setOpen] = useState({edit:false, view:false})
 
   const handleClose = () => {
@@ -51,7 +50,7 @@ function Customer({name, phone, address, id, tickets}) {
           onClick={() => setChecked(!checked)} ></label>
       </div> */}
       <div className='customer__body'>
-        <h2>{name}</h2>
+        <a href={`/customer/${id}`}><h2>{name}</h2></a>
         <h2>{phone}</h2>
         <address>{address}</address>
         <div className='customer__buttons'>

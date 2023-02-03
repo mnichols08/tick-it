@@ -1,11 +1,13 @@
-import './App.css';
-import Home from './tickIt'
+import "./tickIt.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
-function App() {
-
+function App({ Element   }) {
   return (
-    <div className='app'>
-      <Home />
+    <div className="app tickIt">
+      <Header />
+      <Element />
+      <Footer />
     </div>
   );
 }

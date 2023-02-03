@@ -3,7 +3,7 @@
   padding: 15px 20px;
   border-left: 4px solid hsl(210, 10%, 75%);
   background-color: white;
-  max-width: 700px;
+  max-width: 70%;
   margin: 0 auto;
   display: flex;
   gap: 20px;
@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+.customer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.customer a:hover {
+  text-decoration: underline;
+}
 .customer--borderColor{
   border-color: green;
   box-shadow: 0 6px 18px -9px hsl(210, 15%, 65%);

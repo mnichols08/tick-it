@@ -17,12 +17,12 @@ nav ul { display: flex; list-style:none}
   list-style: none;
 }
 
-.tickIt > header nav ul a {
+.tickIt > header a {
   color: #fff;
   text-decoration: none;
 }
 
-.tickIt > header nav ul a:hover {
+.tickIt > header a:hover {
   text-decoration: underline;
 }
 

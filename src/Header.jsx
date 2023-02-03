@@ -1,22 +1,22 @@
 function Header() {
-
   return (
     <header>
-    <h1>tick.it</h1>
-    
-    <nav>
-      {/* <ul>
-        <li>
-          <a href='#'>Customers</a>
-        </li>&nbsp;|&nbsp;
+      <a href="/"><h1>tick.it</h1></a>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="/customers">Customers</a>
+          </li>
+          {/*&nbsp;|&nbsp;
         <li>
           <a href='#'>Tickets</a>
         </li>&nbsp;|&nbsp; 
         <li>
           <a href='#'>Notes</a>
-        </li>
-      </ul> */}
-    </nav>
+  </li>*/}
+        </ul>
+      </nav>
     </header>
   );
 }
