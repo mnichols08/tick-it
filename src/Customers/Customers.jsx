@@ -40,7 +40,8 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 
     const customerColRef = query(
       collection(db, "customers"),
       orderBy("name", "desc"),
-      limit(49)
+      where("name", == searchField)
+      limit(30)
     );
     
     onSnapshot(customerColRef, (snapshot) => {
