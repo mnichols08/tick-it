@@ -26,7 +26,7 @@ function Customers() {
      filteredCustomers = customers.filter(customer => 
                                           customer.data.name.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
                                           customer.data.lookup && customer.data.lookup.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
-                                          customer.data.phone.includes && customer.data.phone.toString().includes(searchField.toString()) ||
+                                          customer.data.phone && customer.data.phone.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
                                           customer.data.address && customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
                                          )
 }
