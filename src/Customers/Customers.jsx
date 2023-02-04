@@ -39,7 +39,7 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
   useEffect(searchField => {
     const customerColRef = query(
       collection(db, "customers"),
-      limit(10)
+      where("name", "==", searchField)
     );
     
     onSnapshot(customerColRef, (snapshot) => {
@@ -48,14 +48,12 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
           id: doc.id,
           data: doc.data()
         }))
-        setFilter(searchField)
       );
     });
     
   }, []);
   return (
     <section>
-    {console.log(filter)}
       <div className="tickIt__container">
         <input
           className="searchBar"
