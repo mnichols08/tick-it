@@ -8,10 +8,10 @@ function Customers() {
   const [searchField, setSearchField] = useState([]);
   const [openAddCustomerModal, setOpenAddCustomerModal] = useState(false);
   const [customers, setCustomers] = useState([]);
+  const [filter, setFilter] = useState([]);
   
   let filteredCustomers
      try {
-      console.log('trying killer search')
     filteredCustomers = customers.map(customer => customer.data).data.filter((o) =>
       Object.keys(o).some((k) => {
 
@@ -23,11 +23,10 @@ function Customers() {
         })
       );
     } catch {
-      console.log("fall back to lame search");
      filteredCustomers = customers.filter(customer => 
                                           customer.data.name.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
                                           customer.data.lookup && customer.data.lookup.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
-                                          customer.data.phone.includes && customer.data.phone.includes(searchField) || customer.data.phone.toString().toLowerCase() == searchField.toString().toLowerCase() ||
+                                          customer.data.phone.includes && customer.data.phone.toString().includes(searchField.toString()) ||
                                           customer.data.address && customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
                                          )
 }
@@ -54,6 +53,7 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
   }, []);
   return (
     <section>
+    {console.log(searchField)}
       <div className="tickIt__container">
         <input
           className="searchBar"
