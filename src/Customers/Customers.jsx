@@ -8,17 +8,25 @@ function Customers() {
   const [searchField, setSearchField] = useState([]);
   const [openAddCustomerModal, setOpenAddCustomerModal] = useState(false);
   const [customers, setCustomers] = useState([]);
-  const filteredCustomers = customers.filter(
-    (customer) =>
-      customer.data.includes && customer.data.includes(searchField) ||
-      customer.data.name.includes && customer.data.name.toLowerCase().includes(searchField) ||
-      customer.data.name.includes && customer.data.name.includes(searchField) ||
-      customer.data.phone.includes && customer.data.phone.includes(searchField) ||
-      customer.data.phone == searchField ||
-      customer.data.address.includes && customer.data.address.toLowerCase().includes(searchField) ||
-      customer.data.address.includes && customer.data.address.includes(searchField) ||
-      customer.data.lookup.includes && customer.data.lookup.includes(searchField) || customer.data.lookup == searchField
-  );
+
+  let filteredCustomers
+     try {
+      console.log('trying killer search')
+    filteredCustomers = customers.map(customer => customer.data).data.filter((o) =>
+      Object.keys(o).some((k) => {
+
+        if (o[k] !== null)
+          return o[k]
+            .toString()
+            .toLowerCase()
+            .includes(searchField.toString().toLowerCase());
+        })
+      );
+    } catch {
+      console.log("fall back to lame search");
+     filteredCustomers = customers.filter(customer => customer.data.name.toString().toLowerCase().includes(searchField.toString().toLowerCase()))
+}
+filteredCustomers = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 );
   const handleChange = (e) => {
     setSearchField(e.target.value);
   };
@@ -28,6 +36,7 @@ function Customers() {
       collection(db, "customers"),
       orderBy("name", "desc")
     );
+    
     onSnapshot(customerColRef, (snapshot) => {
       setCustomers(
         snapshot.docs.map((doc) => ({
@@ -36,6 +45,7 @@ function Customers() {
         }))
       );
     });
+    
   }, []);
   return (
     <section>
