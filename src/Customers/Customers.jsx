@@ -48,11 +48,8 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
           data: doc.data()
         }))
       );
-    });
-    setFilter(customers.filter(customer => customer.data.name.includes && customer.data.name.includes(searchField)))
-    console.log(filter)
-    
-  }, [searchField, filter, customers ]);
+    });  
+  }, [ ]);
   return (
     <section>
     {console.log(customers)}
