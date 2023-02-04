@@ -26,9 +26,9 @@ function Customers() {
       console.log("fall back to lame search");
      filteredCustomers = customers.filter(customer => 
                                           customer.data.name.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
-                                          customer.data.lookup.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
-                                          customer.data.phone.includes(searchField) || 
-                                          customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
+                                          customer.data.lookup && customer.data.lookup.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
+                                          customer.data.phone.includes && customer.data.phone.includes(searchField) || 
+                                          customer.data.customer && customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
                                          )
 }
 filteredCustomers = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 );
