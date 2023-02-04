@@ -8,12 +8,11 @@ function Customers() {
   const [searchField, setSearchField] = useState([]);
   const [openAddCustomerModal, setOpenAddCustomerModal] = useState(false);
   const [customers, setCustomers] = useState([]);
-    const [filteredCustomers, setFilteredCustomers] = useState([]);
-
-  let filter
+  
+  let filteredCustomers
      try {
       console.log('trying killer search')
-    filter = customers.map(customer => customer.data).data.filter((o) =>
+    filteredCustomers = customers.map(customer => customer.data).data.filter((o) =>
       Object.keys(o).some((k) => {
 
         if (o[k] !== null)
@@ -25,15 +24,14 @@ function Customers() {
       );
     } catch {
       console.log("fall back to lame search");
-     filter = customers.filter(customer => 
+     filteredCustomers = customers.filter(customer => 
                                           customer.data.name.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
                                           customer.data.lookup && customer.data.lookup.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
                                           customer.data.phone.includes && customer.data.phone.includes(searchField) || 
                                           customer.data.customer && customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
                                          )
 }
-filter = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 );
-const filteredCustomers = filter
+filteredCustomers = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 );
   
   const handleChange = (e) => {
     setSearchField(e.target.value);
