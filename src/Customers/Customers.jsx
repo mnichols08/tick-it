@@ -47,13 +47,14 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
           id: doc.id,
           data: doc.data()
         }))
+        setFilter('test', customers.filter(customer => customer.data.name.includes && customer.data.name.includes(searchField))
       );
     });
     
   }, []);
   return (
     <section>
-    {console.log(searchField)}
+    {console.log(filter)}
       <div className="tickIt__container">
         <input
           className="searchBar"
