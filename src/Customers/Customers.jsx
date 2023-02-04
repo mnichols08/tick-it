@@ -27,8 +27,8 @@ function Customers() {
      filteredCustomers = customers.filter(customer => 
                                           customer.data.name.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
                                           customer.data.lookup && customer.data.lookup.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
-                                          customer.data.phone.includes && customer.data.phone.includes(searchField) || 
-                                          customer.data.customer && customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
+                                          customer.data.phone.includes && customer.data.phone.includes(searchField) || customer.data.phone.toString().toLowerCase() == searchField.toString().toLowerCase() ||
+                                          customer.data.address && customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
                                          )
 }
 filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name) ? 1 : -1 );
@@ -46,7 +46,7 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
       setCustomers(
         snapshot.docs.map((doc) => ({
           id: doc.id,
-          data: doc.data(),
+          data: doc.data()
         }))
       );
     });
