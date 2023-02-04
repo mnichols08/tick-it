@@ -31,7 +31,7 @@ function Customers() {
                                           customer.data.customer && customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
                                          )
 }
-filteredCustomers = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 );
+filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name) ? 1 : -1 );
   
   const handleChange = (e) => {
     setSearchField(e.target.value);
