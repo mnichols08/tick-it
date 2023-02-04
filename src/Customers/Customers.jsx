@@ -39,7 +39,8 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 
   useEffect(() => {
     const customerColRef = query(
       collection(db, "customers"),
-      orderBy("name", "desc")
+      orderBy("name", "desc"),
+      limit(49)
     );
     
     onSnapshot(customerColRef, (snapshot) => {
