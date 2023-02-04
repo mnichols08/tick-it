@@ -8,11 +8,12 @@ function Customers() {
   const [searchField, setSearchField] = useState([]);
   const [openAddCustomerModal, setOpenAddCustomerModal] = useState(false);
   const [customers, setCustomers] = useState([]);
+    const [filteredCustomers, setFilteredCustomers] = useState([]);
 
-  let filteredCustomers
+  let filter
      try {
       console.log('trying killer search')
-    filteredCustomers = customers.map(customer => customer.data).data.filter((o) =>
+    filter = customers.map(customer => customer.data).data.filter((o) =>
       Object.keys(o).some((k) => {
 
         if (o[k] !== null)
@@ -24,23 +25,23 @@ function Customers() {
       );
     } catch {
       console.log("fall back to lame search");
-     filteredCustomers = customers.filter(customer => 
+     filter = customers.filter(customer => 
                                           customer.data.name.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
                                           customer.data.lookup && customer.data.lookup.toString().toLowerCase().includes(searchField.toString().toLowerCase()) ||
                                           customer.data.phone.includes && customer.data.phone.includes(searchField) || 
                                           customer.data.customer && customer.data.address.toString().toLowerCase().includes(searchField.toString().toLowerCase())
                                          )
 }
-filteredCustomers = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 );
+filter = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 );
+  
   const handleChange = (e) => {
     setSearchField(e.target.value);
+    setFilteredCustomers(filter);
   };
   /* function to get all customers from firestore in realtime */
   useEffect(() => {
-    console.log(searchField)
     const customerColRef = query(
-      collection(db, "customers"),
-      where("name", "==", "Mikey Nichols" )
+      collection(db, "customers")
     );
     
     onSnapshot(customerColRef, (snapshot) => {
