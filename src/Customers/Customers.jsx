@@ -33,10 +33,10 @@ function Customers() {
                                          )
 }
 filter = filteredCustomers.sort((a, b) => (a.name > b.name) ? 1 : -1 );
+const filteredCustomers = filter
   
   const handleChange = (e) => {
     setSearchField(e.target.value);
-    setFilteredCustomers(filter);
   };
   /* function to get all customers from firestore in realtime */
   useEffect(() => {
