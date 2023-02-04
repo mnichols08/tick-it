@@ -5,7 +5,7 @@ import EditCustomer from './EditCustomer'
 import { doc, updateDoc, deleteDoc} from "firebase/firestore";
 import {db} from '../firebase'
 
-function Customer({name, phone, address, id, tickets}) {
+function Customer({name, phone, address, id, tickets, lookup}) {
   const [open, setOpen] = useState({edit:false, view:false})
 
   const handleClose = () => {
@@ -51,6 +51,7 @@ function Customer({name, phone, address, id, tickets}) {
       </div> */}
       <div className='customer__body'>
         <a href={`/customer/${id}`}><h2>{name}</h2></a>
+        <sup>{lookup}</sup>
         <h2>{phone}</h2>
         <address>{address}</address>
         <div className='customer__buttons'>
@@ -77,6 +78,7 @@ function Customer({name, phone, address, id, tickets}) {
           address={address}
           tickets={tickets}
           id={id}
+          lookup={lookup}
           open={open.view} />
       }
 

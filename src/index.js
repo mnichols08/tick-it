@@ -6,11 +6,16 @@ import App from "./App";
 import Customers from "./Customers/Customers";
 import ViewCustomer from "./Customers/ViewCustomer";
 import Welcome from "./tickIt";
+import Seed from "./seed"
 import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App Element={Welcome} />,
+  },
+  {
+    path: "/seed",
+    element: <App Element={Seed} />
   },
   {
     path: "/customers",

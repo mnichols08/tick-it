@@ -3,12 +3,13 @@ import Modal from "../Modal";
 import "./customerItem.css";
 import NewTicket from "../Tickets/AddTicket";
 import Tickets from '../Tickets/Tickets'
-function CustomerItem({ onClose, open, name, phone, address, id }) {
+function CustomerItem({ onClose, open, name, phone, address, id, lookup }) {
   const [openAddTicketModal, setOpenAddTicketModal] = useState(false);
   return (
     <Modal modalLable="Customer" onClose={onClose} open={open}>
       <div className="customerItem">
         <h2>name: {name}</h2>
+        <sup>ID: {lookup}</sup>
         <h2>phone: {phone}</h2>
         <address>{address}</address>
         <h3>Tickets</h3>

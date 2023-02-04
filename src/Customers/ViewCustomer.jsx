@@ -32,6 +32,7 @@ function ViewCustomer() {
         <>
           <div className="customerItem">
             <label>Name:</label><h2>{customerProfile.data.name}</h2>
+            <label>ID:</label><h2> {customerProfile.data.lookup}</h2>
             <label>Phone:</label><h2> {customerProfile.data.phone}</h2>
             <label>Address:</label><address>{customerProfile.data.address}</address>
             <Tickets id={customerProfile.id} />

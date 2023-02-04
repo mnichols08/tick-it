@@ -10,11 +10,14 @@ function Customers() {
   const [customers, setCustomers] = useState([]);
   const filteredCustomers = customers.filter(
     (customer) =>
-      customer.data.name.toLowerCase().includes(searchField) ||
-      customer.data.name.includes(searchField) ||
-      customer.data.phone.includes(searchField) ||
-      customer.data.address.toLowerCase().includes(searchField) ||
-      customer.data.address.includes(searchField)
+      customer.data.includes && customer.data.includes(searchField) ||
+      customer.data.name.includes && customer.data.name.toLowerCase().includes(searchField) ||
+      customer.data.name.includes && customer.data.name.includes(searchField) ||
+      customer.data.phone.includes && customer.data.phone.includes(searchField) ||
+      customer.data.phone == searchField ||
+      customer.data.address.includes && customer.data.address.toLowerCase().includes(searchField) ||
+      customer.data.address.includes && customer.data.address.includes(searchField) ||
+      customer.data.lookup.includes && customer.data.lookup.includes(searchField) || customer.data.lookup == searchField
   );
   const handleChange = (e) => {
     setSearchField(e.target.value);
@@ -53,9 +56,10 @@ function Customers() {
               tickets={customer.data.tickets}
               id={customer.id}
               key={customer.id}
+              lookup={customer.data.lookup}
             />
           ))}
-        </div>  
+        </div>
         <button onClick={() => setOpenAddCustomerModal(true)}>
           Create Customer +
         </button>
