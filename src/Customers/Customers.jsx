@@ -53,7 +53,7 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
   }, []);
   return (
     <section>
-    {console.log(customers}
+    {console.log(customers)}
       <div className="tickIt__container">
         <input
           className="searchBar"
