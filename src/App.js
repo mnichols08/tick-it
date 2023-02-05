@@ -3,7 +3,7 @@ import "./tickIt.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function App({ Element, customers   }) {
+function App({ Element }) {
     const [searchField, setSearchField] = useState([]);
   const [openAddCustomerModal, setOpenAddCustomerModal] = useState(false);
   const [customers, setCustomers] = useState([]);
