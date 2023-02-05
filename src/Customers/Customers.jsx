@@ -38,7 +38,8 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
   /* function to get all customers from firestore in realtime */
   useEffect(() => {
     const customerColRef = query(
-      collection(db, "customers")
+      collection(db, "customers"),
+      where("name",">",searchField)
     );
     
     onSnapshot(customerColRef, (snapshot) => {
@@ -49,7 +50,7 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
         }))
       );
     });  
-  }, [ ]);
+  }, [ searchField ]);
   return (
     <section>
     {console.log(customers)}
