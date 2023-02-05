@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { collection, query, orderBy, onSnapshot, where, limit } from "firebase/firestore";
-import { db } from "../firebase";
 import Customer from "./Customer";
 import AddCustomer from "./AddCustomer";
 
