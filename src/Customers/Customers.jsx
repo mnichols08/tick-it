@@ -4,6 +4,7 @@ import AddCustomer from "./AddCustomer";
 
 function Customers({customers}) {
     const [searchField, setSearchField] = useState([])
+    const [openAddCustomerModal, setOpenAddCustomerModal] = useState([])
     let filteredCustomers
      try {
     filteredCustomers = customers.map(customer => customer.data).data.filter((o) =>
