@@ -1,10 +1,13 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from 'react';
+import { collection, query, orderBy, onSnapshot, where, limit } from "firebase/firestore";
+import { db } from "./firebase";
 import Customer from "./Customer";
 import AddCustomer from "./AddCustomer";
 
-function Customers({customers}) {
+function Customers() {
     const [searchField, setSearchField] = useState([])
     const [openAddCustomerModal, setOpenAddCustomerModal] = useState(false)
+    const [customers, setCustomers] = useState([]);
     let filteredCustomers
      try {
     filteredCustomers = customers.map(customer => customer.data).data.filter((o) =>
@@ -29,6 +32,22 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
   const handleChange = (e) => {
     setSearchField(e.target.value);
   };
+
+  /* function to get all customers from firestore in realtime */
+  useEffect(() => {
+    const customerColRef = query(
+      collection(db, "customers")
+    );
+    
+    onSnapshot(customerColRef, (snapshot) => {
+      setCustomers(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data()
+        }))
+      );
+    });  
+  }, [ ]);
   return (
     <section>
       <div className="tickIt__container">
