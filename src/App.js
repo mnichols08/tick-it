@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { collection, query, orderBy, onSnapshot, where, limit } from "firebase/firestore";
+import { db } from "./firebase";
 import "./tickIt.css";
 import Header from "./Header";
 import Footer from "./Footer";
