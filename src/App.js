@@ -12,8 +12,7 @@ function App({ Element }) {
   /* function to get all customers from firestore in realtime */
   useEffect(() => {
     const customerColRef = query(
-      collection(db, "customers"),
-      limit(25)
+      collection(db, "customers")
     );
     
     onSnapshot(customerColRef, (snapshot) => {
