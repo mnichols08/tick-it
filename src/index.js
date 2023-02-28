@@ -8,6 +8,7 @@ import ViewCustomer from "./Customers/ViewCustomer";
 import Welcome from "./tickIt";
 import Seed from "./seed"
 import "./index.css";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,11 +20,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/customers",
-    element: <App Element={Customers} />,
+    element: <App Element={Customers}/>,
     children: [
       {
         path: ":id",
-        element: <App Element={ViewCustomer} />,
+        element: <App Element={ViewCustomer}  />,
       },
     ],
   },

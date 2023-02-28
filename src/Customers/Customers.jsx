@@ -38,13 +38,24 @@ filteredCustomers = filteredCustomers.sort((a, b) => (a.data.name > b.data.name)
     const customerColRef = query(
       collection(db, "customers")
     );
+   
     
     onSnapshot(customerColRef, (snapshot) => {
+      const arr = [];
+      let customersStr = '';
+      const customersArr = snapshot.docs.map((doc) => {
+        const data = doc.data();
+        arr.push(data);
+        customersStr = arr.toString();
+        console.log(customersStr)
+        localStorage.setItem(`customers`, customersStr)
+      return {
+        id: doc.id,
+        data: doc.data() 
+      }})
+      
       setCustomers(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          data: doc.data()
-        }))
+        customersArr
       );
     });  
   }, [ ]);
