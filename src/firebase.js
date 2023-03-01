@@ -13,13 +13,13 @@ import { getFirestore } from 'firebase/firestore'
 // };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDMNUhmuVPQ3_ehhtYTw3FT5Ak8gZBVyXQ",
-  authDomain: "tigormi.firebaseapp.com",
-  projectId: "tigormi",
-  storageBucket: "tigormi.appspot.com",
-  messagingSenderId: "294846381631",
-  appId: "1:294846381631:web:96db35c6161e6eac28828a",
-  measurementId: "G-GYWL3EVMKL"
+  apiKey: "AIzaSyBe54uV9lOiDCuc3-gQP085Qy55_lEbRSM",
+  authDomain: "journey-to-code-4836d.firebaseapp.com",
+  projectId: "journey-to-code-4836d",
+  storageBucket: "journey-to-code-4836d.appspot.com",
+  messagingSenderId: "655347361607",
+  appId: "1:655347361607:web:840065d350c299ba6fce62",
+  measurementId: "G-S1CC0TPQCE"
 }
 
 // Initialize Firebase and Firestore

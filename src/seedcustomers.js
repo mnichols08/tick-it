@@ -231,7 +231,7 @@ const customers = [
     "lookup": 346,
     "name": "Advance Auto Parts #6098",
     "phone": 5406222563,
-    "address": "Advance Auto Parts #6098 28 North CommeRCe Avenue Front Royal VA 22630"
+    "address": "Advance Auto Parts #6098 28 North Commerce Avenue Front Royal VA 22630"
   },
   {
     "lookup": 350,
@@ -531,7 +531,7 @@ const customers = [
     "lookup": 2175,
     "name": "Axalta Coating Systems LLC",
     "phone": "",
-    "address": "Axalta Coating Systems LLC Two CommeRCe Square 2001 Market St. Suite 3600 Philadelphia PA 19103"
+    "address": "Axalta Coating Systems LLC Two Commerce Square 2001 Market St. Suite 3600 Philadelphia PA 19103"
   },
   {
     "lookup": 2195,
@@ -775,15 +775,15 @@ const customers = [
   },
   {
     "lookup": 3644,
-    "name": "Blue RiBBon Lumber",
+    "name": "Blue Ribbon Lumber",
     "phone": 3013345810,
-    "address": "Blue RiBBon Lumber 1679 Blue RiBBon Road Oakland MD 21550"
+    "address": "Blue Ribbon Lumber 1679 Blue Ribbon Road Oakland MD 21550"
   },
   {
     "lookup": 3645,
-    "name": "Blue RiBBon Pallet",
+    "name": "Blue Ribbon Pallet",
     "phone": 3013345810,
-    "address": "Blue RiBBon Pallet 1679 Blue RiBBon Road Oakland MD 21550"
+    "address": "Blue Ribbon Pallet 1679 Blue Ribbon Road Oakland MD 21550"
   },
   {
     "lookup": 3650,
@@ -813,7 +813,7 @@ const customers = [
     "lookup": 3930,
     "name": "Dan Boone",
     "phone": "",
-    "address": "Dan Boone 103 White Dale ChuRCh Rd Terra Alta WV 26764"
+    "address": "Dan Boone 103 White Dale Church Rd Terra Alta WV 26764"
   },
   {
     "lookup": 3950,
@@ -921,7 +921,7 @@ const customers = [
     "lookup": 5000,
     "name": "Brownings Auto Sales",
     "phone": 3013343270,
-    "address": "Brownings Auto Sales 9 ChuRCh Street Oakland MD 21550"
+    "address": "Brownings Auto Sales 9 Church Street Oakland MD 21550"
   },
   {
     "lookup": 5200,
@@ -1383,7 +1383,7 @@ const customers = [
     "lookup": 7988,
     "name": "D & E Transport LLC",
     "phone": 3044634810,
-    "address": "D & E Transport LLC 318 PieRCe Benbush Rd Thomas WV 26292"
+    "address": "D & E Transport LLC 318 Pierce Benbush Rd Thomas WV 26292"
   },
   {
     "lookup": 7990,
@@ -1725,7 +1725,7 @@ const customers = [
     "lookup": 9801,
     "name": "E-Z Excavating LLC",
     "phone": 2403210524,
-    "address": "E-Z Excavating LLC 1499 Gnegy ChuRCh Rd Oakland MD 21550"
+    "address": "E-Z Excavating LLC 1499 Gnegy Church Rd Oakland MD 21550"
   },
   {
     "lookup": 9900,
@@ -1843,9 +1843,9 @@ const customers = [
   },
   {
     "lookup": 10450,
-    "name": "Faith Evangelical Free ChuRCh",
+    "name": "Faith Evangelical Free Church",
     "phone": 3013344172,
-    "address": "Faith Evangelical Free ChuRCh 1009 Maryland Highway Mt Lake Park MD 21550"
+    "address": "Faith Evangelical Free Church 1009 Maryland Highway Mt Lake Park MD 21550"
   },
   {
     "lookup": 10490,
@@ -2181,7 +2181,7 @@ const customers = [
     "lookup": 12700,
     "name": "Garrett Mine Supply",
     "phone": 3013344136,
-    "address": "Garrett Mine Supply 104 CommeRCe Dr. Oakland MD 21550"
+    "address": "Garrett Mine Supply 104 Commerce Dr. Oakland MD 21550"
   },
   {
     "lookup": 12750,
@@ -2415,7 +2415,7 @@ const customers = [
     "lookup": 14260,
     "name": "H & A Trucking, LLC",
     "phone": 3046148012,
-    "address": "H & A Trucking, LLC 1582 PieRCe Benbush Rd Thomas WV 26292"
+    "address": "H & A Trucking, LLC 1582 Pierce Benbush Rd Thomas WV 26292"
   },
   {
     "lookup": 14265,
@@ -3261,7 +3261,7 @@ const customers = [
     "lookup": 19760,
     "name": "EDM Trucking",
     "phone": 2403211970,
-    "address": "EDM Trucking 1321 White ChuRCh Road Oakland MD 21550"
+    "address": "EDM Trucking 1321 White Church Road Oakland MD 21550"
   },
   {
     "lookup": 19775,
@@ -3369,7 +3369,7 @@ const customers = [
     "lookup": 20325,
     "name": "Maple Hurst Farm",
     "phone": 3047355879,
-    "address": "Maple Hurst Farm 524 Gnegy ChuRCh Rd. Eglon WV 26716"
+    "address": "Maple Hurst Farm 524 Gnegy Church Rd. Eglon WV 26716"
   },
   {
     "lookup": 20350,
@@ -3567,7 +3567,7 @@ const customers = [
     "lookup": 21410,
     "name": "Mettiki Coal (Preston)",
     "phone": 8592247221,
-    "address": "Mettiki Coal (Preston) Attn: Joy UpchuRCh 771 Corporate Drive Ste 1000 Lexington Ky 40503"
+    "address": "Mettiki Coal (Preston) Attn: Joy Upchurch 771 Corporate Drive Ste 1000 Lexington Ky 40503"
   },
   {
     "lookup": 21500,
@@ -3735,7 +3735,7 @@ const customers = [
     "lookup": 21990,
     "name": "Mountain View Farm",
     "phone": 2403212021,
-    "address": "Mountain View Farm 1375 Blue RiBBon Rd Oakland MD 21550"
+    "address": "Mountain View Farm 1375 Blue Ribbon Rd Oakland MD 21550"
   },
   {
     "lookup": 22000,
@@ -3825,7 +3825,7 @@ const customers = [
     "lookup": 22725,
     "name": "Mt. View Farms",
     "phone": 2403212021,
-    "address": "Mt. View Farms 1375 Blue RiBBon Rd. Oakland MD 21550"
+    "address": "Mt. View Farms 1375 Blue Ribbon Rd. Oakland MD 21550"
   },
   {
     "lookup": 22750,
@@ -3981,7 +3981,7 @@ const customers = [
     "lookup": 23400,
     "name": "Nuway Interiors",
     "phone": 3013349275,
-    "address": "Nuway Interiors 31 CommeRCe Drive Oakland MD 21550-9605"
+    "address": "Nuway Interiors 31 Commerce Drive Oakland MD 21550-9605"
   },
   {
     "lookup": 23600,
@@ -4035,7 +4035,7 @@ const customers = [
     "lookup": 23900,
     "name": "Rick Palmer",
     "phone": 3013341246,
-    "address": "Rick Palmer 1113 White Pine CiRCle Oakland MD 21550"
+    "address": "Rick Palmer 1113 White Pine Circle Oakland MD 21550"
   },
   {
     "lookup": 23910,
@@ -4077,7 +4077,7 @@ const customers = [
     "lookup": 24000,
     "name": "Patterson Boat Co. Inc.",
     "phone": 3013875000,
-    "address": "Patterson Boat Co. Inc. 106 Round Beach CiRCle Dr Swanton MD 21561"
+    "address": "Patterson Boat Co. Inc. 106 Round Beach Circle Dr Swanton MD 21561"
   },
   {
     "lookup": 24100,
@@ -4107,7 +4107,7 @@ const customers = [
     "lookup": 24265,
     "name": "Reuben Peachey Farms",
     "phone": 3013341350,
-    "address": "Reuben Peachey Farms 1375 Blue RiBBon Rd Oakland MD 21550"
+    "address": "Reuben Peachey Farms 1375 Blue Ribbon Rd Oakland MD 21550"
   },
   {
     "lookup": 24275,
@@ -4333,9 +4333,9 @@ const customers = [
   },
   {
     "lookup": 25573,
-    "name": "RC Logging LLC",
+    "name": "rc Logging LLC",
     "phone": 3047353570,
-    "address": "RC Logging LLC 2944 Aurora Pike Aurora WV 26705"
+    "address": "rc Logging LLC 2944 Aurora Pike Aurora WV 26705"
   },
   {
     "lookup": 25575,
@@ -4413,7 +4413,7 @@ const customers = [
     "lookup": 25830,
     "name": "Ratliff Hardwoods LLC",
     "phone": 3045883738,
-    "address": "Ratliff Hardwoods LLC 1499 Gnegy ChuRCh Rd Oakland MD 21550"
+    "address": "Ratliff Hardwoods LLC 1499 Gnegy Church Rd Oakland MD 21550"
   },
   {
     "lookup": 26000,
@@ -4713,7 +4713,7 @@ const customers = [
     "lookup": 27550,
     "name": "James E. Schmidt",
     "phone": 3013876557,
-    "address": "James E. Schmidt 457 Steiding ChuRCh Rd Swanton MD 21561"
+    "address": "James E. Schmidt 457 Steiding Church Rd Swanton MD 21561"
   },
   {
     "lookup": 27715,
@@ -4825,9 +4825,9 @@ const customers = [
   },
   {
     "lookup": 28650,
-    "name": "Simon PeaRCe (US), Inc.",
+    "name": "Simon Pearce (US), Inc.",
     "phone": 8026746280,
-    "address": "Simon PeaRCe (US), Inc. 109 Park Road Windsor Vt 05089"
+    "address": "Simon Pearce (US), Inc. 109 Park Road Windsor Vt 05089"
   },
   {
     "lookup": 28700,
@@ -5205,7 +5205,7 @@ const customers = [
     "lookup": 31285,
     "name": "T & L Excavating",
     "phone": 3047355879,
-    "address": "T & L Excavating 524 Gnegy ChuRCh Rd. Eglon WV 26716"
+    "address": "T & L Excavating 524 Gnegy Church Rd. Eglon WV 26716"
   },
   {
     "lookup": 31286,
@@ -5223,7 +5223,7 @@ const customers = [
     "lookup": 31289,
     "name": "T & T Electrical Service LLC",
     "phone": 3047355879,
-    "address": "T & T Electrical Service LLC 524 Gnegy ChuRCh Rd Eglon WV 26716"
+    "address": "T & T Electrical Service LLC 524 Gnegy Church Rd Eglon WV 26716"
   },
   {
     "lookup": 31290,
@@ -5379,7 +5379,7 @@ const customers = [
     "lookup": 32250,
     "name": "Town Of Deer Park",
     "phone": 3013344531,
-    "address": "Town Of Deer Park 100 ChuRCh Street Deer Park MD 21550"
+    "address": "Town Of Deer Park 100 Church Street Deer Park MD 21550"
   },
   {
     "lookup": 32275,
@@ -5443,9 +5443,9 @@ const customers = [
   },
   {
     "lookup": 32780,
-    "name": "Eric TriBBey",
+    "name": "Eric Tribbey",
     "phone": "",
-    "address": "Eric TriBBey P.O. Box 2202 Mt Lake Park MD 21550"
+    "address": "Eric Tribbey P.O. Box 2202 Mt Lake Park MD 21550"
   },
   {
     "lookup": 32790,
@@ -5767,9 +5767,9 @@ const customers = [
   },
   {
     "lookup": 34525,
-    "name": "White ChuRCh Auto",
+    "name": "White Church Auto",
     "phone": 3013349038,
-    "address": "White ChuRCh Auto 1240 White ChuRCh Oakland MD 21550"
+    "address": "White Church Auto 1240 White Church Oakland MD 21550"
   },
   {
     "lookup": 34550,

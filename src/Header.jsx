@@ -7,7 +7,10 @@ function Header() {
         <ul>
           <li>
             <a href="/customers">Customers</a>
-          </li>
+          </li>&nbsp;|&nbsp;
+        <li>
+          <a href='/items'>Items</a>
+        </li>
           {/*&nbsp;|&nbsp;
         <li>
           <a href='#'>Tickets</a>
