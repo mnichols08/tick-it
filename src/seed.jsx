@@ -21,8 +21,8 @@ function Customers() {
     <section>
       <div className="tickIt__container">
         <label>Seed Database</label>
-        <button onClick={seedDatabase(customers)} >Full Seed</button><br></br>
-        <button onClick={seedDatabase(trimmedDB)} >Partial and Random Seed</button>
+        <button onClick={() => seedDatabase(customers)} >Full Seed</button><br></br>
+        <button onClick={() => seedDatabase(trimmedDB)} >Partial and Random Seed</button>
       </div>
     </section>
   );
