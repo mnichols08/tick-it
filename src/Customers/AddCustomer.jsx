@@ -59,4 +59,4 @@ function AddCustomer({onClose, open}) {
   )
 }
 
-export default AddCustomer
+export default AddCustomer;
